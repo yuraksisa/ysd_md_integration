@@ -1,3 +1,5 @@
+require 'data_mapper' unless defined?DataMapper
+
 module ExternalIntegration
   #
   # It represents an account to an external service
