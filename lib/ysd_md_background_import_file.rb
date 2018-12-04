@@ -27,9 +27,9 @@ module ExternalIntegration
     property :created_at, DateTime
 
     property :status, Enum[:pending, :in_progress, :error, :done], :default => :pending
-    property :number_of_records, Integer
-    property :number_of_imported_records, Integer
-    property :number_of_errors, Integer
+    property :number_of_records, Integer, default: 0
+    property :number_of_imported_records, Integer, default: 0
+    property :number_of_errors, Integer, default: 0
     property :error_message, Text
 
   end
